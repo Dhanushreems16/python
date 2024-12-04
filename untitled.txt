@@ -1,0 +1,12 @@
+import math
+from scipy.special import perm,comb
+n=int(input("Enter the value for n"))
+r=int(input("Enter the value for r"))
+def permutation(n,r):
+   return math.factorial(n)/math.factorial(n-r)
+def combination(n,r):
+   return math.factorial(n)/math.factorial(n-r)*math.factorial(r)
+print("The permutation of",n,r,"is: ")
+print(permutation(n,r))
+print("The combination of",n,r,"is: ")
+print(combination(n,r))
